@@ -142,7 +142,7 @@ func (bpf *bpf) GenerateAndroidBuildActions(ctx android.ModuleContext) {
 		// Make paths in deps files relative
 		"-no-canonical-prefixes",
 
-		"-O2",
+		"-O3",
 		"-isystem bionic/libc/include",
 		"-isystem bionic/libc/kernel/uapi",
 		// The architecture doesn't matter here, but asm/types.h is included by linux/types.h.
